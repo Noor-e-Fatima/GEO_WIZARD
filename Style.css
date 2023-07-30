@@ -253,34 +253,48 @@ justify-content: center;
 @media only screen and (max-width: 1140px) {
     .nav-list{
         flex-direction: column;
+        cursor: pointer;
     }
 
     .navbar{
-        height: 447px;
+        height: 597px;
+        background-color: black;
         flex-direction: column;
         transition: all 0.7s ease-out;
     }
 
+
+    .navbar.active .h-nav-resp{
+        opacity: 1;
+    }
     .box-main{
         flex-direction: column-reverse;
         max-width: 100%;
+        padding-top: 20%;
     }
     .rightNav{
-        text-align: center;
+      text-align: center; 
     }
-    #search{
-        width: 100%;
-    }
+   
 .burger{
     display: block;
+    cursor: pointer;
+    height: 100px;
+    background-color: black;
 }
+
 
 .h-nav-resp{
-    height: 72px;
+    opacity: 0;
+    
 }
 
-.v-class-resp{
-    opacity: 0;
+
+.v-class-resp 
+{
+    height: 500px;
+    background: black;
+    
 }
 .text-small{
     text-align: center;
@@ -292,14 +306,38 @@ justify-content: center;
 .btn{
     text-align: center;
 }
+.buttons{
+    text-align: center;
+}
 .section{
     flex-direction: column-reverse;
 }
 .secright{
     flex-direction: column-reverse;
-}
-.paras{
-    padding: 0px;
+    height: fit-content;
+    padding-top: 10%;
 }
 
+.paras{
+    padding: 50px;
 }
+
+.secleft{
+    flex-direction: column-reverse;
+    height: fit-content;
+    padding-top: 10%;
+}
+
+.secmid{
+    flex-direction: column-reverse;
+    height: fit-content;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+
+}
+
+
+
